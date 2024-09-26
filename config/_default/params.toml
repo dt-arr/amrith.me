@@ -20,7 +20,7 @@ hideSingleContentsWhenJSDisabled = false
 # Cool header title is available in slide -- check this out and include it later
 
 # header
-homeHeaderType = "img" # text, img, slide
+homeHeaderType = "slide" # text, img, slide # OLD -- img
 
 # menu
 showMobileMenuTerms = ["tags", "categories", "series"]
@@ -32,7 +32,7 @@ enableSearch = true
 enableSearchHighlight = true
 enableGoToTop = true
 enableWhoami = true
-summaryShape = "classic" # card, classic, compact
+summaryShape = "classic" # card, classic, compact # PREV - classic
 searchResultPosition = "main" # side, main
 archiveGroupByDate = "2006" # "2006-01": group by month, "2006": group by year
 archivePaginate = 100

@@ -41,8 +41,8 @@ header:
   - type: slide
     height: 235
     options:
-        startSlide: 0
-        auto: 5000
+        startSlide: 1
+        auto: 6000
         draggable: true
         autoRestart: true
         continuous: true
@@ -51,19 +51,18 @@ header:
     slide:
       - paddingX: 50
         paddingY: 0
-        align: left
-        imageSrc: images/header/background.jpg
+        align: right
+        imageSrc: images/header/conference.jpg
         imageSize: cover
         imageRepeat: no-repeat
         imagePosition: center
         title:
-          - header title1
+          - Inspiring Ideas Through Dialogue
         subtitle:
-          - header subtitle1
+          - Knowledge sharing, papers, blogs and talks
         titleFontSize: 44
         subtitleFontSize: 16
         spaceBetweenTitleSubtitle: 20
-
       - paddingX: 50
         paddingY: 0
         align: center
@@ -72,25 +71,27 @@ header:
         imageRepeat: no-repeat
         imagePosition: center
         title:
-          - header title2
+          - Journey Beyond Tech
         subtitle:
-          - header subtitle2
+          - Reflections on Life, Travel, and Creativity
         titleFontSize: 44
         subtitleFontSize: 16
         spaceBetweenTitleSubtitle: 20
 
       - paddingX: 50
         paddingY: 0
-        align: right
-        imageSrc: images/header/background.jpg
+        align: left
+        imageSrc: images/header/tech.png
         imageSize: cover
         imageRepeat: no-repeat
         imagePosition: center
         title:
-          - header title3
+          - Shaping the Future with Technology
         subtitle:
-          - header subtitle3
+          - From Datacenters to Cloud to IoT and AI - Deep Dives into the Cutting Edge
         titleFontSize: 44
         subtitleFontSize: 16
         spaceBetweenTitleSubtitle: 20
+
+
 ---
