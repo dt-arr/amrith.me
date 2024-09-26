@@ -5,6 +5,7 @@ type = "about"
 date = "2020-04-03"
 +++
 
+
 I first learned about computers when I was in school. I learnt BASIC and there are commands that I have never forgotten.  <mark> 10 REM</mark>   I always wanted to work on computers and did not like the fact we had to purchase a Windows license to use a computer. Windows was expensive. Even today, MS [won't open source Windows operating systems that have become end of life](https://www.fsf.org/blogs/community/why-freeing-windows-7-opens-doors). This is when I was attracted towards Linux especially Ubuntu. Canonical(the company that supports Ubuntu) would send install CDs for free to your home address. Cloud today as you know is available to you because of Linux being open source and therefore having open technology opens the door for rapid innovation.
 
 
