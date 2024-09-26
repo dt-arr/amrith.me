@@ -44,7 +44,7 @@ pubPaginate = 20
 # whoami
 myname = "Amrith"
 #email = "me@example.com"
-whoami = "Cloud Technology Leader"
+whoami = "Cloud and Observability advocate"
 bioImageUrl = ""
 useGravatar = false
 location = "Melbourne, Australia"
