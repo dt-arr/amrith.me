@@ -1,0 +1,79 @@
+[[main]]
+  identifier = "about"
+  name = "About"
+  url = "about"
+  weight = 6
+
+[[main]]
+  identifier = "archive"
+  name = "Changelog"
+  url = "archive"
+  weight = 5
+
+#[[main]]
+#  identifier = "presentation"
+#  name = "Pt"
+#  url = "presentation"
+#  weight = 3
+
+[[main]]
+  identifier = "gallery"
+  name = "Gallery"
+  url = "gallery"
+  weight = 3
+
+#[[main]]
+#  parent = "gallery"
+#  name = "Cartoon"
+#  url = "gallery/cartoon"
+
+[[main]]
+  parent = "gallery"
+  name = "Photos"
+  url = "gallery/photo"
+
+[[main]]
+  parent = "gallery"
+  name = "Paintings"
+  url = "gallery/paintings"
+
+[[main]]
+  identifier = "posts"
+  name = "Blog"
+  url = "posts"
+  weight = 1
+
+[[main]]
+  parent = "posts"
+  name = "Tech"
+  url = "posts/tech"
+  weight = 1
+  
+[[main]]
+  parent = "posts"
+  name = "Personal"
+  url = "posts/personal"
+  weight = 2
+
+#[[main]]
+#  parent = "posts"
+#  name = "zzo"
+#  url = "posts/zzo"
+
+#[[main]]
+#  identifier = "showcase"
+#  name = "Showcase"
+#  url = "showcase"
+#  weight = 6
+
+[[main]]
+  identifier = "publication"
+  name = "Publications"
+  url = "publication"
+  weight = 4
+
+[[main]]
+  identifier = "Talks"
+  name = "Talks"
+  url = "talks"
+  weight = 2
