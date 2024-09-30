@@ -52,14 +52,16 @@ header:
       - paddingX: 50
         paddingY: 0
         align: right
-        imageSrc: images/header/conference.jpg
+        #imageSrc: images/header/conference.jpg
+        imageSrc: images/header/dt-install-k8s.gif
+
         imageSize: cover
         imageRepeat: no-repeat
         imagePosition: center
-        title:
-          - Inspiring Ideas Through Dialogue
-        subtitle:
-          - Knowledge sharing, papers, blogs and talks
+        #title:
+        #  - Inspiring Ideas Through Dialogue
+        #subtitle:
+        #  - Knowledge sharing, papers, blogs and talks
         titleFontSize: 44
         subtitleFontSize: 16
         spaceBetweenTitleSubtitle: 20
@@ -70,10 +72,10 @@ header:
         imageSize: cover
         imageRepeat: no-repeat
         imagePosition: center
-        title:
-          - Journey Beyond Tech
-        subtitle:
-          - Reflections on Life, Travel, and Creativity
+        #title:
+        #  - Journey Beyond Tech
+        #subtitle:
+        #  - Reflections on Life, Travel, and Creativity
         titleFontSize: 44
         subtitleFontSize: 16
         spaceBetweenTitleSubtitle: 20
@@ -85,10 +87,10 @@ header:
         imageSize: cover
         imageRepeat: no-repeat
         imagePosition: center
-        title:
-          - Shaping the Future with Technology
-        subtitle:
-          - From Datacenters to Cloud to IoT and AI - Deep Dives into the Cutting Edge
+        #title:
+        #  - Shaping the Future with Technology
+        #subtitle:
+        #  - From Datacenters to Cloud to IoT and AI - Deep Dives into the Cutting Edge
         titleFontSize: 44
         subtitleFontSize: 16
         spaceBetweenTitleSubtitle: 20
