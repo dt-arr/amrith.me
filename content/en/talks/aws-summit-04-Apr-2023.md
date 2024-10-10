@@ -16,10 +16,8 @@ Sydney - AWS Summit 2023
 
 04 April 2023
 
-####  Full session video:
+####  Full session available on:
 
 {{< youtube eoGWOgLEGac >}}
 
-#### Guest:
-* Amrith Raj
 

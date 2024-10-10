@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Raspberry Pi board -->
+  <rect x="20" y="120" width="160" height="60" rx="10" ry="10" fill="#A22846"/>
+  <rect x="35" y="90" width="130" height="30" fill="#4C4C4C"/>
+  
+  <!-- GPIO pins -->
+  <rect x="40" y="75" width="8" height="15" fill="#000"/>
+  <rect x="52" y="75" width="8" height="15" fill="#000"/>
+  <rect x="64" y="75" width="8" height="15" fill="#000"/>
+  <rect x="76" y="75" width="8" height="15" fill="#000"/>
+
+  <!-- Raspberry Pi CPU area -->
+  <circle cx="100" cy="150" r="10" fill="#34A853"/>
+  
+  <!-- Kubernetes hexagon logo on top -->
+  <circle cx="100" cy="50" r="40" fill="#326CE5"/>
+  <polygon fill="#fff" points="100,20 118,38 137,38 128,55 137,72 118,72 100,90 82,72 63,72 72,55 63,38 82,38"/>
+  
+  <!-- Kubernetes logo details -->
+  <line x1="100" y1="20" x2="100" y2="90" stroke="#fff" stroke-width="4"/>
+  <line x1="63" y1="55" x2="137" y2="55" stroke="#fff" stroke-width="4"/>
+  <line x1="72" y1="38" x2="128" y2="72" stroke="#fff" stroke-width="4"/>
+  <line x1="128" y1="38" x2="72" y2="72" stroke="#fff" stroke-width="4"/>
+</svg>
