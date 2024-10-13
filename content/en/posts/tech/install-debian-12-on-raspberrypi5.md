@@ -11,7 +11,7 @@ tocPosition: inner
 ---
 # Installing Debian 12 Bookworm on Raspberry Pi 5: A Step-by-Step Guide Using the FlightRadar24 Image
 
-The Raspberry Pi 5 brings a powerful platform to developers, enthusiasts, and makers. By running **Debian 12 Bookworm**, you get the latest features and security updates. This guide will walk you through the process of setting up Debian 12 on your Raspberry Pi 5 using a ready-made FlightRadar24 image, which is based on Debian Bookworm, and then optimizing the system by removing unnecessary software like FlightRadar24 and dump1090-mutability. We'll also troubleshoot potential firmware issues, update the login message, and customize the system.
+Sometimes, you just want plain Debian 12 and you want it on the latest Raspberry Pi 5. This guide will walk you through the process of setting up Debian 12 on your Raspberry Pi 5 using a ready-made FlightRadar24 image, which is based on Debian Bookworm, and then optimizing the system by removing unnecessary software like FlightRadar24 and dump1090-mutability. We'll also troubleshoot potential firmware issues, update the login message, and customize the system.
 
 {{< notice info >}}
 We are using this approach because, as of this writing, the Debian project does not officially support or provide images specifically for the Raspberry Pi 5.
