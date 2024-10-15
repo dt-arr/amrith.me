@@ -115,7 +115,7 @@ If you encounter errors like `cannot read file system information for /boot/firm
     sudo mount /boot/firmware
     sudo apt -f install
 
-## Step 6: Customise the message of the day (motd)
+## Step 6: Customise the message of the day (motd) [Optional]
 
 1. Create a dynamic MOTD that displays useful system information such as:
 
@@ -138,8 +138,7 @@ Add the following content to the file:
     echo "Uptime: $(uptime -p)"
     echo "Processes: $(ps aux | wc -l)"
     echo "Current IP Address: $(hostname -I)"
-    echo "Connected IPs:"
-    ss -tuna | grep ESTAB | awk '{print $5}'
+    echo "Connected IPs:" ss -tuna | grep ESTAB | awk '{print $5}'
     echo "---------------------------------------------------"
   ```    
 
