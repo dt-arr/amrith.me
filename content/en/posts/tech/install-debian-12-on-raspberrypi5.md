@@ -1,5 +1,5 @@
 ---
-title: "Installing Debian 12 (Bookworm) on Raspberry Pi 5"
+title: "Raspberry Pi 5: Installing Debian 12 (Bookworm)"
 description: "While Debian 12 (codenamed Bookworm) is not yet officially released for the Raspberry Pi 5, you can install by following this approach. This guide will walk you through the steps to install Debian 12 on your Raspberry Pi 5."
 date: 2024-10-07T13:29:58+10:00
 draft: false
