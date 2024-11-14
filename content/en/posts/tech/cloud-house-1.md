@@ -1,7 +1,7 @@
 ---
 title: "Migrating legacy Windows Apps to AWS(or any cloud) with no code change (1/2)"
 date: 2019-05-02T13:37:05+11:00
-description: "Migrating apps that were designed for older versions of Windows cannot be installed on the recent versions. This limits ones ability to run older apps on newer versions of Windows because older ones reach End of Life. In this post, we check the options available to run older apps on newer versions of Windows"
+description: "Migrating apps that were designed for older versions of Windows cannot be installed on the recent versions. This limits ones ability to run older apps on newer versions of Windows because older ones reach End of Life. In this post, we check the options available to run older apps on newer versions of Windows "
 date: 2019-05-02T12:39:12+11:00
 draft: false
 author: Amrith
