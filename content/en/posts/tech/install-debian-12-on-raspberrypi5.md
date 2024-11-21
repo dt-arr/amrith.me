@@ -164,3 +164,7 @@ All the best!
 If you want to install Flightaware's piaware on Raspberry Pi 5, you can now do that on this image because Piaware can be installed on this Raspberry Pi 5
 
 You wouldn't want to uninstall dump1090-mutability and others like we did in the earlier steps.
+
+### What's next? Can you install Kubernetes on this Raspberry Pi?
+
+Absolutely! Read [this article](/posts/tech/install-k8s-raspberrypi/) to follow the simple steps on how to install Kubernetes on this Raspberry Pi!
