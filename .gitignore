@@ -64,6 +64,10 @@ node_modules/
 # dotenv environment variables file
 .env
 
+# Visual Stude Code workspaces
+.code-workspace
+
 # Hugo
 public/
 server/
+amrith.me.code-workspace

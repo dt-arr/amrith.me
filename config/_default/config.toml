@@ -11,7 +11,7 @@ buildFuture = true
 
 copyright = "&copy;{year}, All original writing on this site is licensed under "
 timeout = 10000
-enableEmoji = true
+enableEmoji = false
 paginate = 20
 rssLimit = 100
 

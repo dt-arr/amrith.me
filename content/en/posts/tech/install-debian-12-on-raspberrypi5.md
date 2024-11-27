@@ -7,8 +7,12 @@ image: images/icons/motherboard-icon-red.png
 enableToc: true
 enableTocContent: true
 tocPosition: inner
+libraries:
+- msc
 
 ---
+
+
 # Installing Debian 12 Bookworm on Raspberry Pi 5: A Step-by-Step Guide Using the FlightRadar24 Image
 
 Sometimes, you just want plain Debian 12 and you want it on the latest Raspberry Pi 5. This guide will walk you through the process of setting up Debian 12 on your Raspberry Pi 5 using a ready-made FlightRadar24 image, which is based on Debian Bookworm, and then optimizing the system by removing unnecessary software like FlightRadar24 and dump1090-mutability. We'll also troubleshoot potential firmware issues, update the login message, and customize the system.
@@ -17,11 +21,34 @@ Sometimes, you just want plain Debian 12 and you want it on the latest Raspberry
 We are using this approach because, as of this writing, the Debian project does not officially support or provide images specifically for the Raspberry Pi 5.
 {{< /notice >}}
 
+
+
 ## Step 0: Assemble your Raspberry Pi 5
 
 Watch the below video if you wish to see the assembly of the Pi with Active Cooler and case
 
 {{< youtube 5zxoCf9V3PE >}}
+
+### Highlevel steps
+
+```msc
+User->RaspberryPiImager: Launch Raspberry Pi Imager
+User->RaspberryPiImager: Select flightradar24 image
+User->RaspberryPiImager: Configure WiFi and passwords
+RaspberryPiImager->SDCard: Write the image
+
+SDCard->RaspberryPi: Insert SD card and boot
+RaspberryPi->User: Initial setup and login
+
+User->RaspberryPi: Remove flightradar24 components
+User->RaspberryPi: Remove dump1090 components
+
+User->RaspberryPi: Fix firmware and boot issues
+Note right of User: Modify /boot/firmware, \nupdate /etc/fstab, reload daemon
+
+User->RaspberryPi: Customize message of the day (MOTD)
+RaspberryPi-->User: Installation complete and customized!
+```
 
 ## Step 1: Download the FlightRadar24 Image
 
@@ -168,3 +195,6 @@ You wouldn't want to uninstall dump1090-mutability and others like we did in the
 ### What's next? Can you install Kubernetes on this Raspberry Pi?
 
 Absolutely! Read [this article](/posts/tech/install-k8s-raspberrypi/) to follow the simple steps on how to install Kubernetes on this Raspberry Pi!
+
+
+

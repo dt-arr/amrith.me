@@ -1,6 +1,6 @@
 ---
 title: "Kubernetes: Installing Kubernetes on a Raspberry Pi 5 in simple steps"
-description: "This guide will walk you through the process of installing Kubernetes on a Raspberry Pi, allowing you to set up a local Kubernetes cluster for learning, development, testing, or training purposes within your own network."
+description: "This guide will walk you through the process of installing Kubernetes(k8s) on a Raspberry Pi, allowing you to set up a local Kubernetes cluster for learning, development, testing, or training purposes within your own network."
 date: 2024-11-21T13:29:58+10:00
 draft: false
 image: images/icons/rpi-k8s.svg
