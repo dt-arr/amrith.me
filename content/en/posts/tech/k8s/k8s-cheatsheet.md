@@ -14,6 +14,15 @@ hideToc: false
 enableToc: true
 enableTocContent: false
 image: images/icons/gen-cheatsheet-icon.png
+tags:
+- kubernetes
+- Raspberry-Pi
+categories:
+- kubernetes
+- Raspberry-Pi
+series:
+- kubernetes
+- Raspberry-Pi
 ---
 
 

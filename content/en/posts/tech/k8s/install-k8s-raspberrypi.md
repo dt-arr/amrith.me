@@ -28,6 +28,52 @@ First of all, we need Debian installed on Raspberry Pi. Installing on Rasbian or
 
 Run all the following commands as root or sudo or as required
 
+### Ensure the host has a static IP
+
+Follow the most convenient method to set up a static UP address.
+
+Decide if you want to connect the Raspberry Pi via a Ethernet(eth0) or via Wireless lan(wlan0). Having connectivity to both does not matter but note that kubeadm will choose the primary IP address of the host. 
+
+If you are connected via an Ethernet or Wireless LAN, create a file named `eth0` or `wlan0` in folder `/etc/network/interfaces.d/` with the contents similar to the following:
+
+Change the `address`, `gateway`, `dns-server values` that meet your needs.
+Refer [Network Configuration](https://wiki.debian.org/NetworkConfiguration#Configuring_the_interface_manually) in case you need to see additional details
+
+Configure your router to reserve IP addresses based on MAC addresses if it supports configurations.
+
+
+{{< codes eth0 wlan0 >}}
+  {{< code >}}
+
+  ```
+auto eth0
+iface eth0 inet static
+    address 192.168.1.88
+    netmask 255.255.255.0
+    gateway 192.168.1.1
+    dns-nameservers 1.1.1.1 1.0.0.1
+  ```
+
+  {{< /code >}}
+
+
+  {{< code >}}
+
+  ```
+auto wlan0
+iface wlan0 inet static
+    address 192.168.1.88
+    netmask 255.255.255.0
+    gateway 192.168.1.1
+    dns-nameservers 1.1.1.1 1.0.0.1
+  ```
+
+  {{< /code >}}
+{{< /codes >}}
+
+
+
+
 ### Check if swap is ON and if so disable it
 
 ``` shell
@@ -49,13 +95,14 @@ swapon --show
 
 ### Preparing for Kubernetes Networking
 
+
 Kubernetes requires certain kernel modules for proper networking and container support.
 
 1. **Load Kernel Modules**: Enable `overlay` for container storage and `br_netfilter` for network bridge filtering.
 2. **Configure Kernel Parameters**: Set parameters to enable IP forwarding and ensure iptables processes bridged traffic.
 3. **Apply Changes**: Reload the system configuration to apply the updated parameters.
 
-```bash
+```shell
 # Step 1: Load kernel modules
 cat <<EOF | tee /etc/modules-load.d/containerd.conf
 overlay
@@ -482,16 +529,16 @@ kube-scheduler-rpi5-debian-k8s            1/1     Running   0          7h48m
 
 #### Confirm the network range:
 
-````bash
+````shell
 kubectl cluster-info dump | egrep -e '(service-cluster-ip-range|cluster-cidr)'
 ````
 Output:
-````bash
+````shell
      "--service-cluster-ip-range=10.96.0.0/12",
 
 ````
 
-#### Get the host IP:
+#### Get the static IP that was set initally:
 
 ````shell
 ip route get 1 | grep -o -P "src [0-9\.]+"
@@ -501,11 +548,18 @@ My case the output IP was `src 192.168.1.88`
 
 #### Update your network routing
 
-Update the routing in your router to route `10.96.0.0` via `192.168.1.88`
+Update the routing in your WiFi router to route `10.96.0.0` via `192.168.1.88` and subnetmask `255.240.0.0`
+
 
 ## Conclusion
 
 That's it!
 
 You now have Kubernetes running on a tiny but powerful server in your home network. 
+
+### Next: Install a fully functional Demo App
+
+In the next section in the series, lets install a fully functional demo App:
+
 Go ahead and deploy a Kubernetes app and see how it works!
+
