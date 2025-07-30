@@ -1,0 +1,7 @@
+name: amrith-onprem-network
+api_endpoint_host: tenantid123.live.dynatrace.com
+oauth:
+  client_id: dt0s10.FAKETOKEN
+  client_secret: dt0s10.FAKETOKEN.6AKETOKENFAKETOKENFAKETOKENFAKETOKENFAKETOKENFAKETOKEN
+  resource: urn:dtenvironment:tenantid123
+  endpoint: https://sso.dynatrace.com/sso/oauth2/token
